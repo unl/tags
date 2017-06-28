@@ -1,0 +1,1806 @@
+{
+    "machine_name": "unl",
+    "human_name": "University of Nebraska\u2013Lincoln",
+    "description": null,
+    "children": [
+        {
+            "machine_name": "audiences",
+            "human_name": "Audiences",
+            "description": null,
+            "children": [
+                {
+                    "machine_name": "students",
+                    "human_name": "Students",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "faculty",
+                    "human_name": "Faculty",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "staff",
+                    "human_name": "Staff",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "perspective_student",
+                    "human_name": "Perspective Student",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "parents",
+                    "human_name": "Parents",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "emeriti",
+                    "human_name": "Emeriti",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "visitors",
+                    "human_name": "Visitors",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "undergraduate_students",
+                    "human_name": "Undergraduate Students",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "graduate_students",
+                    "human_name": "Graduate Students",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "transfer_students",
+                    "human_name": "Transfer Students",
+                    "description": null,
+                    "children": []
+                }
+            ]
+        },
+        {
+            "machine_name": "colleges",
+            "human_name": "Colleges",
+            "description": null,
+            "children": [
+                {
+                    "machine_name": "casnr",
+                    "human_name": "Agricultural Sciences & Natural Resources",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "architecture",
+                    "human_name": "Architecture",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "arts_sciences",
+                    "human_name": "Arts & Sciences",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "cob",
+                    "human_name": "College of Business",
+                    "description": null,
+                    "children": [
+                        {
+                            "machine_name": "accounting",
+                            "human_name": "Accounting",
+                            "description": null,
+                            "children": []
+                        },
+                        {
+                            "machine_name": "actuarial_sciences",
+                            "human_name": "Actuarial Science (Business)",
+                            "description": null,
+                            "children": []
+                        },
+                        {
+                            "machine_name": "agribusiness",
+                            "human_name": "Agribusiness (Business)",
+                            "description": null,
+                            "children": []
+                        },
+                        {
+                            "machine_name": "administration",
+                            "human_name": "Administration",
+                            "description": null,
+                            "children": []
+                        },
+                        {
+                            "machine_name": "analytics",
+                            "human_name": "Business Analytics",
+                            "description": null,
+                            "children": []
+                        },
+                        {
+                            "machine_name": "economics",
+                            "human_name": "Economics (Business)",
+                            "description": null,
+                            "children": []
+                        },
+                        {
+                            "machine_name": "finance",
+                            "human_name": "Finance",
+                            "description": null,
+                            "children": []
+                        },
+                        {
+                            "machine_name": "global_leadership",
+                            "human_name": "Global Leadership",
+                            "description": null,
+                            "children": []
+                        },
+                        {
+                            "machine_name": "international_business",
+                            "human_name": "International Business",
+                            "description": null,
+                            "children": []
+                        },
+                        {
+                            "machine_name": "management",
+                            "human_name": "Management",
+                            "description": null,
+                            "children": []
+                        },
+                        {
+                            "machine_name": "marketing",
+                            "human_name": "Marketing",
+                            "description": null,
+                            "children": []
+                        },
+                        {
+                            "machine_name": "supply_chain_management",
+                            "human_name": "Supply Chain Management",
+                            "description": null,
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "machine_name": "education_human_sciences",
+                    "human_name": "Education & Human Sciences",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "engineering",
+                    "human_name": "Engineering",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "fine_arts",
+                    "human_name": "Fine & Performing Arts",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "journalism",
+                    "human_name": "Journalism & Mass Communications",
+                    "description": null,
+                    "children": []
+                }
+            ]
+        },
+        {
+            "machine_name": "aos",
+            "human_name": "Areas of Study",
+            "description": null,
+            "children": [
+                {
+                    "machine_name": "accounting",
+                    "human_name": "Accounting",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "actuarial_sciences",
+                    "human_name": "Actuarial Science (Business)",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "agribusiness",
+                    "human_name": "Agribusiness (Business)",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "administration",
+                    "human_name": "Administration",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "analytics",
+                    "human_name": "Business Analytics",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "economics",
+                    "human_name": "Economics (Business)",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "finance",
+                    "human_name": "Finance",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "global_leadership",
+                    "human_name": "Global Leadership",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "international_business",
+                    "human_name": "International Business",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "management",
+                    "human_name": "Management",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "marketing",
+                    "human_name": "Marketing",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "supply_chain_management",
+                    "human_name": "Supply Chain Management",
+                    "description": null,
+                    "children": []
+                }
+            ]
+        },
+        {
+            "machine_name": "buildings",
+            "human_name": "Buildings",
+            "description": null,
+            "children": [
+                {
+                    "machine_name": "building_14PG",
+                    "human_name": "14th & Avery Parking Garage",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_17PG",
+                    "human_name": "17th & R Parking Garage",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_19PG",
+                    "human_name": "19th and Vine Parking Garage",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_ACB",
+                    "human_name": "Agricultural Communications Building",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_ADMN",
+                    "human_name": "Canfield Administration Building North",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_ADMS",
+                    "human_name": "Canfield Administration Building South",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_AGH",
+                    "human_name": "Agricultural Hall",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_AHFS",
+                    "human_name": "Agronomy & Horticulture\/Forestry Shops",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_AHG1",
+                    "human_name": "Agronomy & Horticulture Greenhouse 1",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_AHG2",
+                    "human_name": "Agronomy & Horticulture Greenhouse 2",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_AHG3",
+                    "human_name": "Agronomy & Horticulture Greenhouse 3",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_AHG4",
+                    "human_name": "Agronomy & Horticulture Greenhouse 4",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_AHPH",
+                    "human_name": "Agronomy & Horticulture Physiology Building",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_AHTL",
+                    "human_name": "Agronomy & Horticulture Outstate Testing Laboratory",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_ALEX",
+                    "human_name": "Alexander Building",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_ANDN",
+                    "human_name": "Andersen Hall",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_ANDR",
+                    "human_name": "Andrews Hall",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_ANSC",
+                    "human_name": "Animal Science Complex",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_ARCH",
+                    "human_name": "Architecture Hall",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_ARCL",
+                    "human_name": "Architecture Hall Link",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_ARCW",
+                    "human_name": "Architecture Hall West",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_ARH",
+                    "human_name": "Abel Hall",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_ASFS",
+                    "human_name": "Abel-Sandoz Food Service Building",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_ASWC",
+                    "human_name": "Abel-Sandoz Welcome Center",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_AVH",
+                    "human_name": "Avery Hall",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_BDL",
+                    "human_name": "Bio-Fiber Development Laboratory",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_BEAD",
+                    "human_name": "Beadle Center",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_BEL",
+                    "human_name": "Behlen Laboratory",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_BENH",
+                    "human_name": "Benton Hall",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_BESY",
+                    "human_name": "Bessey Hall",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_BIC",
+                    "human_name": "Breslow Ice Center",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_BIOG",
+                    "human_name": "Bioscience Greenhouses",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_BKC",
+                    "human_name": "Barkley Memorial Center",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_BL",
+                    "human_name": "Brace Laboratory",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_BRH",
+                    "human_name": "Burr Hall",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_BSC",
+                    "human_name": "Business Services Complex",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_BURN",
+                    "human_name": "Burnett Hall",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_BUSG",
+                    "human_name": "Bus Garage",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_CBA",
+                    "human_name": "Business Administration Building",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_CCUP",
+                    "human_name": "Utility Plant, City Campus",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_CDL",
+                    "human_name": "Staples Child Development Laboratory",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_CHA",
+                    "human_name": "Chase Hall",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_CHC",
+                    "human_name": "UNL Children's Center",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_COB",
+                    "human_name": "College of Business",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_COL",
+                    "human_name": "Coliseum",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_COOK",
+                    "human_name": "Cook Pavilion",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_CORT",
+                    "human_name": "The Courtyards",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_CPRF",
+                    "human_name": "Cather-Pound-Neihardt Food Service Building",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_CREC",
+                    "human_name": "Sapp Recreation Facility",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_CRES",
+                    "human_name": "Campus Renewable Energy System Building",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_CRH",
+                    "human_name": "Cather Hall",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_CSA",
+                    "human_name": "Conservation & Survey Annex",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_CTA1",
+                    "human_name": "Colonial Terrace Apartment A-1",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_CTA2",
+                    "human_name": "Colonial Terrace Apartment A-2",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_CTA3",
+                    "human_name": "Colonial Terrace Apartment A-3",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_CTA4",
+                    "human_name": "Colonial Terrace Apartment A-4",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_CTB",
+                    "human_name": "Colonial Terrace Apartment B",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_CTC1",
+                    "human_name": "Colonial Terrace Apartment C-1",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_CTC2",
+                    "human_name": "Colonial Terrace Apartment C-2",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_CTC3",
+                    "human_name": "Colonial Terrace Apartment C-3",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_CTC4",
+                    "human_name": "Colonial Terrace Apartment C-4",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_CTD1",
+                    "human_name": "Colonial Terrace Apartment D-1",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_CTD2",
+                    "human_name": "Colonial Terrace Apartment D-2",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_CTES",
+                    "human_name": "City Campus Thermal Energy Storage",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_CTS1",
+                    "human_name": "Colonial Terrace Apartments Shop 1",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_CTS2",
+                    "human_name": "Colonial Terrace Apartments Shop 2",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_CYT",
+                    "human_name": "C.Y. Thompson Library",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_DENT",
+                    "human_name": "College of Dentistry",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_DEV",
+                    "human_name": "Devaney Sports Center",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_DF",
+                    "human_name": "Documents Facility",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_DTC",
+                    "human_name": "Sid and Hazel Dillon Tennis Center",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_ECRH",
+                    "human_name": "East Campus Residence Hall",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_ECUP",
+                    "human_name": "Utility Plant, East Campus",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_EGR2",
+                    "human_name": "Entomology Greenhouse 2",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_EGR3",
+                    "human_name": "Entomology Greenhouse 3",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_ENTO",
+                    "human_name": "Entomology Hall",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_ESST",
+                    "human_name": "Eastside Suites",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_ETES",
+                    "human_name": "East Thermal Energy Storage",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_FAIR",
+                    "human_name": "Fairfield Hall",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_FCB",
+                    "human_name": "Fluid Cooler Building",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_FFAB",
+                    "human_name": "Fleming Fields Annex Building",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_FFCB",
+                    "human_name": "Fleming Fields Park Concessions Bldg",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_FH1",
+                    "human_name": "Fiber Hotel 1",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_FIB",
+                    "human_name": "Facilities Implement Building",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_FIC",
+                    "human_name": "Food Innovation Center",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_FMC",
+                    "human_name": "Facilities Management C",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_FMD",
+                    "human_name": "Facilities Management D",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_FME",
+                    "human_name": "Facilities Management E",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_FMF",
+                    "human_name": "Facilities Management F",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_FMP",
+                    "human_name": "Facilities Management & Planning",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_FMS",
+                    "human_name": "Facilities Management Shops",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_FOOD",
+                    "human_name": "Food Industry Complex",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_FORL",
+                    "human_name": "Forage Research Laboratory - USDA",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_FORS",
+                    "human_name": "Forestry Hall",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_FRC",
+                    "human_name": "Family Resource Center",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_FRH",
+                    "human_name": "Fedde Hall",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_FYH",
+                    "human_name": "Filley Hall",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_GAUN",
+                    "human_name": "Jackie Gaughan Multicultural Center",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_GRDN",
+                    "human_name": "Community Garden Shed",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_HAH",
+                    "human_name": "Hamilton Hall",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_HARH",
+                    "human_name": "Hardin Hall",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_HAYB",
+                    "human_name": "Haymarket Park Baseball Stadium Complex",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_HAYS",
+                    "human_name": "Haymarket Park Softball Stadium Complex",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_HCC",
+                    "human_name": "Hawks Championship Center",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_HDC",
+                    "human_name": "Harper Dining Center",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_HECO",
+                    "human_name": "Home Economics Building",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_HENZ",
+                    "human_name": "Henzlik Hall",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_HEPP",
+                    "human_name": "Heppner Hall",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_HEWP",
+                    "human_name": "Hewit Place",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_HRH",
+                    "human_name": "Harper Hall",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_HUSK",
+                    "human_name": "Husker Hall",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_ICBX",
+                    "human_name": "Ice Box",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_ICC",
+                    "human_name": "Innovation Commons Conference Center",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_ICG",
+                    "human_name": "Greenhouse Innovation Center",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_INSB",
+                    "human_name": "Insectary Building",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_ITSA",
+                    "human_name": "ITS Annex",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_JH",
+                    "human_name": "Theodore Jorgensen Hall",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_KAUF",
+                    "human_name": "Kauffman Academic Residential Center",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_KCR",
+                    "human_name": "Kiesselbach Crops Research Laboratory",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_KEIM",
+                    "human_name": "Keim Hall",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_KNOL",
+                    "human_name": "The Robert E. Knoll Residential Center",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_KRH",
+                    "human_name": "Kimball Recital Hall",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_L014",
+                    "human_name": "2511 Kimco Court A",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_L045",
+                    "human_name": "Alex Gordon Training Complex",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_L052",
+                    "human_name": "Modak Development - BSM",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_L054",
+                    "human_name": "Stallion Ventures",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_L055",
+                    "human_name": "1217 Q St",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_LAW",
+                    "human_name": "McCollum Hall",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_LDR",
+                    "human_name": "Library Depository Retrieval Facility",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_LEV",
+                    "human_name": "Leverton Hall",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_LIB",
+                    "human_name": "Landscape Implement Building",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_LIED",
+                    "human_name": "Lied Center for Performing Arts",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_LLN",
+                    "human_name": "Love Library North & Link",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_LLS",
+                    "human_name": "Love Library South",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_LOVH",
+                    "human_name": "Love Hall",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_LRH",
+                    "human_name": "Love Memorial Hall",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_LSEB",
+                    "human_name": "Landscape Services Equipment Building",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_LSEC",
+                    "human_name": "Landscape Services East Campus",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_LSMC",
+                    "human_name": "Landscape Services Metal Canopy",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_LTM",
+                    "human_name": "Larsen Tractor Museum",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_M&N",
+                    "human_name": "Pershing Military & Naval Science Building",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_MABL",
+                    "human_name": "Mabel Lee Hall",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_MANT",
+                    "human_name": "Manter Hall",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_MBH",
+                    "human_name": "Baker Hall",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_MHF",
+                    "human_name": "Material Handling Facility",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_MILH",
+                    "human_name": "Miller Hall",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_MIPC",
+                    "human_name": "Mabel Lee Fields IPC",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_MODL",
+                    "human_name": "Modular Laboratory",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_MOLR",
+                    "human_name": "Morrison Center",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_MORR",
+                    "human_name": "Morrill Hall",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_MPBX",
+                    "human_name": "Mabel Lee Fields Pressbox",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_MSB",
+                    "human_name": "Maintenance Storage Building",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_MSTD",
+                    "human_name": "Osborne Athletic Complex",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_MUEL",
+                    "human_name": "Mueller Tower",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_MUSH",
+                    "human_name": "Mussehl Hall",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_NAC",
+                    "human_name": "National Agroforestry Center - USDA",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_NAST",
+                    "human_name": "National Agroforestry Center Storage Building - USDA",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_NB1",
+                    "human_name": "North Building 1",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_NB2",
+                    "human_name": "North Building 2",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_NBC",
+                    "human_name": "Nebraska Book Company",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_NECH",
+                    "human_name": "Nebraska Champions Club",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_NEMA",
+                    "human_name": "NEMA Building",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_NEU",
+                    "human_name": "Nebraska East Union",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_NH",
+                    "human_name": "Nebraska Hall",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_NRRA",
+                    "human_name": "Natural Resources Research Annex",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_NSAG",
+                    "human_name": "Nebraska Statewide Arboretum Greenhouse",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_NU",
+                    "human_name": "Nebraska Union",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_NVDC",
+                    "human_name": "Nebraska Vet Diagnostic Center",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_OAC",
+                    "human_name": "Outdoor Adventures Center",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_OH",
+                    "human_name": "Oil House",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_OLDH",
+                    "human_name": "Oldfather Hall",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_ORB3",
+                    "human_name": "Campus Rec Equipment Building 3 - Whittier Fields",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_ORB7",
+                    "human_name": "Campus Rec Equipment Building 7 - Mabel Lee Fields",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_ORCH",
+                    "human_name": "Orchard House",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_OTD",
+                    "human_name": "1320 Q Street",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_OTHM",
+                    "human_name": "Othmer Hall",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_PBA",
+                    "human_name": "Pinnacle Bank Arena",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_PER",
+                    "human_name": "Perin Porch",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_PH",
+                    "human_name": "Pump House",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_PIPH",
+                    "human_name": "Piper Hall",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_PKI",
+                    "human_name": "Peter Kiewit Institute",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_PLSH",
+                    "human_name": "Plant Sciences Hall",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_PM",
+                    "human_name": "Pershing Maintenance",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_PPG",
+                    "human_name": "Plant Pathology Greenhouse",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_PRH",
+                    "human_name": "Pound Hall",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_PSTG",
+                    "human_name": "Plant Science Teaching Greenhouse",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_QH",
+                    "human_name": "Quilt House",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_RAYH",
+                    "human_name": "Raymond Hall",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_RH",
+                    "human_name": "Richards Hall",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_RRB",
+                    "human_name": "Recycling and Refuse Building",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_RVB",
+                    "human_name": "Mary Riepma Ross Media Arts Center-Van Brunt Visitors Center",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_RWC",
+                    "human_name": "Recreation and Wellness Center",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_SCRH",
+                    "human_name": "Schramm Hall",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_SDPG",
+                    "human_name": "Stadium Drive Parking Garage",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_SEC",
+                    "human_name": "Scott Engineering Center",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_SEH",
+                    "human_name": "Seaton Hall",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_SELD",
+                    "human_name": "Selleck Quad Building D",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_SELE",
+                    "human_name": "Selleck Quad Building E",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_SELF",
+                    "human_name": "Selleck Quad Building F",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_SELG",
+                    "human_name": "Selleck Quad Building G",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_SELH",
+                    "human_name": "Selleck Quad Building H",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_SELJ",
+                    "human_name": "Selleck Quad Building J",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_SELK",
+                    "human_name": "Selleck Quad Building K",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_SELL",
+                    "human_name": "Selleck Quad Building L - Food Service",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_SEW",
+                    "human_name": "Sewage Sterilization Plant",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_SHEL",
+                    "human_name": "Sheldon Museum of Art",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_SHOR",
+                    "human_name": "Schorr Center",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_SLNK",
+                    "human_name": "Scott Engineering Center Link",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_SMRH",
+                    "human_name": "Smith Hall",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_SPL",
+                    "human_name": "Splinter Laboratories",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_SSL",
+                    "human_name": "Stewart Seed Laboratory",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_STE",
+                    "human_name": "Stadium East",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_STNO",
+                    "human_name": "Stadium North",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_STSO",
+                    "human_name": "Stadium South",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_STW",
+                    "human_name": "Stadium West",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_SVC",
+                    "human_name": "Service Building",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_SZRH",
+                    "human_name": "Sandoz Hall",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_TBD",
+                    "human_name": "College of Nursing",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_TEAC",
+                    "human_name": "Teachers College Hall",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_TELC",
+                    "human_name": "Terry M. Carpenter Telecommunications Center",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_TEMP",
+                    "human_name": "Temple Building",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_TGE",
+                    "human_name": "Teaching Greenhouse East",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_TGW",
+                    "human_name": "Teaching Greenhouse West",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_TRAN",
+                    "human_name": "Transportation Services",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_UHC",
+                    "human_name": "University Health Center",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_UHOF",
+                    "human_name": "University Housing Office",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_UNFCU",
+                    "human_name": "University of Nebraska Federal Credit Union",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_UNST",
+                    "human_name": "University Suites",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_USDP",
+                    "human_name": "USDA Physiology Building - USDA",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_UST",
+                    "human_name": "U Street Apartments",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_UTF",
+                    "human_name": "Utility Response Facility",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_VARH",
+                    "human_name": "Varner Hall",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_VBS",
+                    "human_name": "Veterinary Medicine and Biomedical Sciences Hall",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_VCSL",
+                    "human_name": "Veterinary Clinical Skills Laboratory",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_VDC",
+                    "human_name": "Veterinary Diagnostic Center",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_VILL",
+                    "human_name": "The Village",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_W1",
+                    "human_name": "Warehouse 1",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_W2",
+                    "human_name": "Warehouse 2",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_WAB",
+                    "human_name": "Woods Art Building",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_WAST",
+                    "human_name": "Waste Accumulation Building",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_WAT",
+                    "human_name": "Watson Building",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_WCDC",
+                    "human_name": "Willa S. Cather Dining Complex",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_WELC",
+                    "human_name": "Welpton Courtroom Building",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_WHIT",
+                    "human_name": "Prem S. Paul Research Center at Whittier School",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_WICK",
+                    "human_name": "Wick Alumni Center",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_WL",
+                    "human_name": "Water Sciences Laboratory",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_WMB",
+                    "human_name": "Westbrook Music Building",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_YS1",
+                    "human_name": "1101 Y",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_501",
+                    "human_name": "501 Building",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_1740",
+                    "human_name": "American Mathematics Competitions Building",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_2222",
+                    "human_name": "Vine Street Apartments West",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_2244",
+                    "human_name": "Vine Street Apartments East",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "building_5050",
+                    "human_name": "50-50",
+                    "description": null,
+                    "children": []
+                }
+            ]
+        }
+    ]
+}

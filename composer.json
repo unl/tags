@@ -1,0 +1,15 @@
+{
+    "name": "unl/tags",
+    "description": "A set of shared and curated tags that can be used by systems across the institution",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Michael Fairchild",
+            "email": "mfairchild365@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {"UNL\\Tags\\": "src/UNL/Tags"}
+    },
+    "require": {}
+}
