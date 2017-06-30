@@ -35,8 +35,28 @@ $audiences = [
 ];
 
 foreach ($audiences as $machineName => $humanName) {
+    $machineName = 'audiences.'.$machineName;
     $tags[$machineName] = new Tag($machineName, $humanName);
     $tags['audiences']->addChild($tags[$machineName]);
+}
+
+$tags['campuses'] = new Tag('campuses', 'Campuses');
+$campuses = [
+    'city' => [
+        'humanName' => 'City',
+    ],
+    'east' => [
+        'humanName' => 'East',
+    ],
+    'innovation' => [
+        'humanName' => 'Innovation',
+    ],
+];
+
+foreach ($campuses as $machineName => $details) {
+    $machineName = 'campuses.'.$machineName;
+    $tags[$machineName] = new Tag($machineName, 'Campus: '.$details['humanName']);
+    $tags['campuses']->addChild($tags[$machineName]);
 }
 
 /**
@@ -51,6 +71,7 @@ $general = [
     'internships' => 'Internships',
     'club' => 'Club',
     'event' => 'Event',
+    'campus_life' => 'Campus Life'
 ];
 
 foreach ($general as $machineName => $humanName) {
@@ -74,14 +95,19 @@ $colleges = [
     'engineering' => 'Engineering',
     'fine_arts' => 'Fine & Performing Arts',
     'journalism' => 'Journalism & Mass Communications',
+    'public_affairs_community_service' => 'Public Affairs & Community Service',
+    'exploratory' => 'Exploratory & Pre-Professional Advising Center',
 ];
 
 foreach ($colleges as $machineName => $humanName) {
-    $tags[$machineName] = new Tag($machineName, $humanName);
+    $machineName = 'colleges.'.$machineName;
+    $tags[$machineName] = new Tag($machineName, 'College: '.$humanName);
     $tags['colleges']->addChild($tags[$machineName]);
 }
 
-
+/**
+ * TODO: Replace these manual AOS tags with an api out of course leaf
+ */
 /**
  * Add tags for each business area of study
  * Retrieved from https://catalog.unl.edu/undergraduate/
@@ -105,20 +131,97 @@ $business_areas = [
 ];
 
 foreach ($business_areas as $machineName=>$humanName) {
-    $tags[$machineName] = new Tag($machineName, $humanName);
-    $tags['cob']->addChild($tags[$machineName]);
+    $machineName = 'aos.cob.'.$machineName;
+    $tags[$machineName] = new Tag($machineName, 'Area of Study: '.$humanName);
+    $tags['colleges.cob']->addChild($tags[$machineName]);
+    $tags['aos']->addChild($tags[$machineName]);
+}
+
+$casnr_areas = [
+    'agribusiness' => 'Agribusiness (CASNR)',
+    'ag_environmental_sciences_communication' => 'Agricultural & Environmental Sciences Communication',
+    'ag_economics' => 'Agricultural Economics',
+    'ag_eduction' => 'Agricultural Education',
+    'agronomy' => 'Agronomy',
+    'animal_science' => 'Animal Science',
+    'applied_climate_science' => 'Applied Climate Science',
+    'applied_science' => 'Applied Science',
+    'biochemistry' => 'Biochemistry (CASNR)',
+    'comp_bio_informatics' => 'Computational Biology & Bioinformatics Minor (CASNR)',
+    'energy_science' => 'Energy Science',
+    'engler_agribusiness_entrepreneurship' => 'Engler Agribusiness Entrepreneurship',
+    'environmental_restoration_science' => 'Environmental Restoration Science',
+    'environmental_studies' => 'Environmental Studies (CASNR)',
+    'fisheries_wildlife' => 'Fisheries & Wildlife',
+    'food_science_tech' => 'Food Science & Technology',
+    'food_tech_for_companion_animals' => 'Food Technology for Companion Animals',
+    'food_energy_water_in_society' => 'Food, Energy, and Water in Society',
+    'forensic_science' => 'Forensic Science',
+    'general' => 'General (CASNR)',
+    'grassland_ecology_management' => 'Grassland Ecology & Management',
+    'grazing_livestock_systems' => 'Grazing Livestock Systems',
+    'Horticulture' => 'Horticulture',
+    'hospitality_restaurant_tourism_management' => 'Hospitality, Restaurant & Tourism Management (CASNR)',
+    'insect_science' => 'Insect Science',
+    'integrated_science' => 'Integrated Science',
+    'international_agriculture_natural_resources' => 'International Agriculture & Natural Resources',
+    'mechanized_systems_management' => 'Mechanized Systems Management',
+    'microbiology' => 'Microbiology (CASNR)',
+    'natural_resource_environmental_economics' => 'Natural Resource & Environmental Economics',
+    'pga_golf_management' => 'PGA Golf Management',
+    'plant_biology' => 'Plant Biology (CASNR)',
+    'pre-veterinary_medicine' => 'Pre-Veterinary Medicine',
+    'statistics' => 'Statistics (CASNR)',
+    'turfgrass_landscape_management' => 'Turfgrass & Landscape Management',
+    'veterinary_science' => 'Veterinary Science',
+    'veterinary_tech' => 'Veterinary Technology',
+    'water_science' => 'Water Science',
+];
+
+foreach ($business_areas as $machineName=>$humanName) {
+    $machineName = 'aos.casnr.'.$machineName;
+    $tags[$machineName] = new Tag($machineName, 'Area of Study: '.$humanName);
+    $tags['colleges.cob']->addChild($tags[$machineName]);
     $tags['aos']->addChild($tags[$machineName]);
 }
 
 
-$buildings = json_decode(file_get_contents('http://maps.unl.edu/?view=allbuildings&format=json'));
+$buildings = json_decode(file_get_contents('http://maps.unl.edu/?view=allbuildings&format=json'), true);
 $tags['buildings'] = new Tag('buildings', 'Buildings');
 $tags['unl']->addChild($tags['buildings']);
 foreach ($buildings as $machineName=>$humanName) {
-    $machineName = 'building_'.$machineName;
-    $tags[$machineName] = new Tag($machineName, $humanName);
+    $machineName = 'buildings.'.$machineName;
+    $tags[$machineName] = new Tag($machineName, 'Building: '.$humanName);
     $tags['buildings']->addChild($tags[$machineName]);
 }
+
+//Now get all of the org units
+//TODO: what about org units that are also colleges or listed elsewhere in this? Mark them as an alias somehow?
+$org_units = json_decode(file_get_contents('https://directory.unl.edu/departments/1?format=json'), true);
+$tags['org_units'] = new Tag('org_units', 'Org Units');
+$tags['unl']->addChild($tags['org_units']);
+
+function addOrgUnit($details, &$tags, Tag $parent = null)
+{
+    $machineName = 'org_units.'.$details['org_unit'];
+    $tags[$machineName] = new Tag($machineName, 'Org Unit: '.$details['name']);
+    $tags['org_units']->addChild($tags[$machineName]);
+    
+    if ($parent) {
+        $parent->addChild($tags[$machineName]);
+    }
+    
+    if (isset($details['children'])) {
+        //Add all children
+        foreach ($details['children'] as $child) {
+            addOrgUnit($child, $tags, $tags[$machineName]);
+        }
+    }
+}
+
+//Now add them
+addOrgUnit($org_units, $tags);
+
 
 //Now export
 $unl_tree = json_encode($tags['unl'], JSON_PRETTY_PRINT);

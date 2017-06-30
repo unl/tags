@@ -21,6 +21,7 @@ class Tag implements JsonSerializable
     
     public function setMachineName($machineName)
     {
+        $machineName = strtolower(trim(preg_replace('/[^A-Za-z0-9-_.]+/', '-', $machineName)));
         if (in_array($machineName, self::$usedMachineNames)) {
             throw new \UnexpectedValueException('The machine name '.$machineName.' is already used.');
         }
