@@ -37,3 +37,11 @@ Scope can be reduced by combining tags.
 
 To tag something as 'graduate research' you could give the content two tags: `graduate` and `research`. The combination of these tags implies that the content applies to both a graduate audience and is research oriented. This avoids adding a potentially redundant `graduate_research` tag.
 
+## Ideas and ways to use
+
+* Add API endpoints to interact with the unl_tree.json file. The API could allow for
+  * searching for a tag
+  * finding related tags (to show related content)
+  * defining aliases for each tag
+  * defining attributes such as a webpage for the tag to point to more information (cob could point to the business site)
+* ???
