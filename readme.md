@@ -27,6 +27,12 @@ Tags are located in two files
 1. `data/flat.json` - defines a flat list of tags that can be used by other systems
 2. `data/unl_tree.json` - defines a taxonomy (or hierarchy) of tags, from which relationships can be inferred.
 
+### Machine Names
+
+The machine names for tags must conform to this regex `/^[a-z0-9\_]+$/` (only lowercase letters, numbers and underscores). This constraint is meant to maximize compatibility with other systems and make the machine names URL safe for transfer between systems.
+
+Tags are often broken into this syntax: `{namespace}__{tag name}`. The double underscore is unique and represents a namespace divider. Tags are namespaced like this to prevent collisions between different namespaces. For example, `cob` is an acronym for both a building and a college. Without the namespaces, it would be impossible to differentiate between the two.
+
 ### Integrating with systems
 
 Each system will be different, but the general idea is to consume the `flat.json` file to populate a pre-defined list of tags that users can select. The system should also expose an API to get content by a given tag, which other systems can use to aggregate similar content.

@@ -35,7 +35,7 @@ $audiences = [
 ];
 
 foreach ($audiences as $machineName => $humanName) {
-    $machineName = 'audiences.'.$machineName;
+    $machineName = 'audiences__'.$machineName;
     $tags[$machineName] = new Tag($machineName, $humanName);
     $tags['audiences']->addChild($tags[$machineName]);
 }
@@ -54,7 +54,7 @@ $campuses = [
 ];
 
 foreach ($campuses as $machineName => $details) {
-    $machineName = 'campuses.'.$machineName;
+    $machineName = 'campuses__'.$machineName;
     $tags[$machineName] = new Tag($machineName, 'Campus: '.$details['humanName']);
     $tags['campuses']->addChild($tags[$machineName]);
 }
@@ -100,7 +100,7 @@ $colleges = [
 ];
 
 foreach ($colleges as $machineName => $humanName) {
-    $machineName = 'colleges.'.$machineName;
+    $machineName = 'colleges__'.$machineName;
     $tags[$machineName] = new Tag($machineName, 'College: '.$humanName);
     $tags['colleges']->addChild($tags[$machineName]);
 }
@@ -131,9 +131,9 @@ $business_areas = [
 ];
 
 foreach ($business_areas as $machineName=>$humanName) {
-    $machineName = 'aos.cob.'.$machineName;
+    $machineName = 'aos__cob__'.$machineName;
     $tags[$machineName] = new Tag($machineName, 'Area of Study: '.$humanName);
-    $tags['colleges.cob']->addChild($tags[$machineName]);
+    $tags['colleges__cob']->addChild($tags[$machineName]);
     $tags['aos']->addChild($tags[$machineName]);
 }
 
@@ -179,9 +179,9 @@ $casnr_areas = [
 ];
 
 foreach ($business_areas as $machineName=>$humanName) {
-    $machineName = 'aos.casnr.'.$machineName;
+    $machineName = 'aos__casnr__'.$machineName;
     $tags[$machineName] = new Tag($machineName, 'Area of Study: '.$humanName);
-    $tags['colleges.cob']->addChild($tags[$machineName]);
+    $tags['colleges__casnr']->addChild($tags[$machineName]);
     $tags['aos']->addChild($tags[$machineName]);
 }
 
@@ -190,7 +190,7 @@ $buildings = json_decode(file_get_contents('http://maps.unl.edu/?view=allbuildin
 $tags['buildings'] = new Tag('buildings', 'Buildings');
 $tags['unl']->addChild($tags['buildings']);
 foreach ($buildings as $machineName=>$humanName) {
-    $machineName = 'buildings.'.$machineName;
+    $machineName = 'buildings__'.$machineName;
     $tags[$machineName] = new Tag($machineName, 'Building: '.$humanName);
     $tags['buildings']->addChild($tags[$machineName]);
 }
@@ -203,7 +203,7 @@ $tags['unl']->addChild($tags['org_units']);
 
 function addOrgUnit($details, &$tags, Tag $parent = null)
 {
-    $machineName = 'org_units.'.$details['org_unit'];
+    $machineName = 'org_units__'.$details['org_unit'];
     $tags[$machineName] = new Tag($machineName, 'Org Unit: '.$details['name']);
     $tags['org_units']->addChild($tags[$machineName]);
     
