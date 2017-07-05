@@ -129,74 +129,230 @@
                     "description": null,
                     "children": [
                         {
-                            "machine_name": "aos__casnr__accounting",
-                            "human_name": "Area of Study: Accounting",
+                            "machine_name": "majors__casnr__agribusiness",
+                            "human_name": "Area of Study: Agribusiness (CASNR)",
                             "description": null,
                             "children": []
                         },
                         {
-                            "machine_name": "aos__casnr__actuarial_sciences",
-                            "human_name": "Area of Study: Actuarial Science (Business)",
+                            "machine_name": "majors__casnr__ag_environmental_sciences_communication",
+                            "human_name": "Area of Study: Agricultural & Environmental Sciences Communication",
                             "description": null,
                             "children": []
                         },
                         {
-                            "machine_name": "aos__casnr__agribusiness",
-                            "human_name": "Area of Study: Agribusiness (Business)",
+                            "machine_name": "majors__casnr__ag_economics",
+                            "human_name": "Area of Study: Agricultural Economics",
                             "description": null,
                             "children": []
                         },
                         {
-                            "machine_name": "aos__casnr__administration",
-                            "human_name": "Area of Study: Administration",
+                            "machine_name": "majors__casnr__ag_eduction",
+                            "human_name": "Area of Study: Agricultural Education",
                             "description": null,
                             "children": []
                         },
                         {
-                            "machine_name": "aos__casnr__analytics",
-                            "human_name": "Area of Study: Business Analytics",
+                            "machine_name": "majors__casnr__agronomy",
+                            "human_name": "Area of Study: Agronomy",
                             "description": null,
                             "children": []
                         },
                         {
-                            "machine_name": "aos__casnr__economics",
-                            "human_name": "Area of Study: Economics (Business)",
+                            "machine_name": "majors__casnr__animal_science",
+                            "human_name": "Area of Study: Animal Science",
                             "description": null,
                             "children": []
                         },
                         {
-                            "machine_name": "aos__casnr__finance",
-                            "human_name": "Area of Study: Finance",
+                            "machine_name": "majors__casnr__applied_climate_science",
+                            "human_name": "Area of Study: Applied Climate Science",
                             "description": null,
                             "children": []
                         },
                         {
-                            "machine_name": "aos__casnr__global_leadership",
-                            "human_name": "Area of Study: Global Leadership",
+                            "machine_name": "majors__casnr__applied_science",
+                            "human_name": "Area of Study: Applied Science",
                             "description": null,
                             "children": []
                         },
                         {
-                            "machine_name": "aos__casnr__international_business",
-                            "human_name": "Area of Study: International Business",
+                            "machine_name": "majors__casnr__biochemistry",
+                            "human_name": "Area of Study: Biochemistry (CASNR)",
                             "description": null,
                             "children": []
                         },
                         {
-                            "machine_name": "aos__casnr__management",
-                            "human_name": "Area of Study: Management",
+                            "machine_name": "majors__casnr__comp_bio_informatics",
+                            "human_name": "Area of Study: Computational Biology & Bioinformatics Minor (CASNR)",
                             "description": null,
                             "children": []
                         },
                         {
-                            "machine_name": "aos__casnr__marketing",
-                            "human_name": "Area of Study: Marketing",
+                            "machine_name": "majors__casnr__energy_science",
+                            "human_name": "Area of Study: Energy Science",
                             "description": null,
                             "children": []
                         },
                         {
-                            "machine_name": "aos__casnr__supply_chain_management",
-                            "human_name": "Area of Study: Supply Chain Management",
+                            "machine_name": "majors__casnr__engler_agribusiness_entrepreneurship",
+                            "human_name": "Area of Study: Engler Agribusiness Entrepreneurship",
+                            "description": null,
+                            "children": []
+                        },
+                        {
+                            "machine_name": "majors__casnr__environmental_restoration_science",
+                            "human_name": "Area of Study: Environmental Restoration Science",
+                            "description": null,
+                            "children": []
+                        },
+                        {
+                            "machine_name": "majors__casnr__environmental_studies",
+                            "human_name": "Area of Study: Environmental Studies (CASNR)",
+                            "description": null,
+                            "children": []
+                        },
+                        {
+                            "machine_name": "majors__casnr__fisheries_wildlife",
+                            "human_name": "Area of Study: Fisheries & Wildlife",
+                            "description": null,
+                            "children": []
+                        },
+                        {
+                            "machine_name": "majors__casnr__food_science_tech",
+                            "human_name": "Area of Study: Food Science & Technology",
+                            "description": null,
+                            "children": []
+                        },
+                        {
+                            "machine_name": "majors__casnr__food_tech_for_companion_animals",
+                            "human_name": "Area of Study: Food Technology for Companion Animals",
+                            "description": null,
+                            "children": []
+                        },
+                        {
+                            "machine_name": "majors__casnr__food_energy_water_in_society",
+                            "human_name": "Area of Study: Food, Energy, and Water in Society",
+                            "description": null,
+                            "children": []
+                        },
+                        {
+                            "machine_name": "majors__casnr__forensic_science",
+                            "human_name": "Area of Study: Forensic Science",
+                            "description": null,
+                            "children": []
+                        },
+                        {
+                            "machine_name": "majors__casnr__general",
+                            "human_name": "Area of Study: General (CASNR)",
+                            "description": null,
+                            "children": []
+                        },
+                        {
+                            "machine_name": "majors__casnr__grassland_ecology_management",
+                            "human_name": "Area of Study: Grassland Ecology & Management",
+                            "description": null,
+                            "children": []
+                        },
+                        {
+                            "machine_name": "majors__casnr__grazing_livestock_systems",
+                            "human_name": "Area of Study: Grazing Livestock Systems",
+                            "description": null,
+                            "children": []
+                        },
+                        {
+                            "machine_name": "majors__casnr__horticulture",
+                            "human_name": "Area of Study: Horticulture",
+                            "description": null,
+                            "children": []
+                        },
+                        {
+                            "machine_name": "majors__casnr__hospitality_restaurant_tourism_management",
+                            "human_name": "Area of Study: Hospitality, Restaurant & Tourism Management (CASNR)",
+                            "description": null,
+                            "children": []
+                        },
+                        {
+                            "machine_name": "majors__casnr__insect_science",
+                            "human_name": "Area of Study: Insect Science",
+                            "description": null,
+                            "children": []
+                        },
+                        {
+                            "machine_name": "majors__casnr__integrated_science",
+                            "human_name": "Area of Study: Integrated Science",
+                            "description": null,
+                            "children": []
+                        },
+                        {
+                            "machine_name": "majors__casnr__international_agriculture_natural_resources",
+                            "human_name": "Area of Study: International Agriculture & Natural Resources",
+                            "description": null,
+                            "children": []
+                        },
+                        {
+                            "machine_name": "majors__casnr__mechanized_systems_management",
+                            "human_name": "Area of Study: Mechanized Systems Management",
+                            "description": null,
+                            "children": []
+                        },
+                        {
+                            "machine_name": "majors__casnr__microbiology",
+                            "human_name": "Area of Study: Microbiology (CASNR)",
+                            "description": null,
+                            "children": []
+                        },
+                        {
+                            "machine_name": "majors__casnr__natural_resource_environmental_economics",
+                            "human_name": "Area of Study: Natural Resource & Environmental Economics",
+                            "description": null,
+                            "children": []
+                        },
+                        {
+                            "machine_name": "majors__casnr__pga_golf_management",
+                            "human_name": "Area of Study: PGA Golf Management",
+                            "description": null,
+                            "children": []
+                        },
+                        {
+                            "machine_name": "majors__casnr__plant_biology",
+                            "human_name": "Area of Study: Plant Biology (CASNR)",
+                            "description": null,
+                            "children": []
+                        },
+                        {
+                            "machine_name": "majors__casnr__pre_veterinary_medicine",
+                            "human_name": "Area of Study: Pre-Veterinary Medicine",
+                            "description": null,
+                            "children": []
+                        },
+                        {
+                            "machine_name": "majors__casnr__statistics",
+                            "human_name": "Area of Study: Statistics (CASNR)",
+                            "description": null,
+                            "children": []
+                        },
+                        {
+                            "machine_name": "majors__casnr__turfgrass_landscape_management",
+                            "human_name": "Area of Study: Turfgrass & Landscape Management",
+                            "description": null,
+                            "children": []
+                        },
+                        {
+                            "machine_name": "majors__casnr__veterinary_science",
+                            "human_name": "Area of Study: Veterinary Science",
+                            "description": null,
+                            "children": []
+                        },
+                        {
+                            "machine_name": "majors__casnr__veterinary_tech",
+                            "human_name": "Area of Study: Veterinary Technology",
+                            "description": null,
+                            "children": []
+                        },
+                        {
+                            "machine_name": "majors__casnr__water_science",
+                            "human_name": "Area of Study: Water Science",
                             "description": null,
                             "children": []
                         }
@@ -220,73 +376,73 @@
                     "description": null,
                     "children": [
                         {
-                            "machine_name": "aos__cob__accounting",
+                            "machine_name": "majors__cob__accounting",
                             "human_name": "Area of Study: Accounting",
                             "description": null,
                             "children": []
                         },
                         {
-                            "machine_name": "aos__cob__actuarial_sciences",
+                            "machine_name": "majors__cob__actuarial_sciences",
                             "human_name": "Area of Study: Actuarial Science (Business)",
                             "description": null,
                             "children": []
                         },
                         {
-                            "machine_name": "aos__cob__agribusiness",
+                            "machine_name": "majors__cob__agribusiness",
                             "human_name": "Area of Study: Agribusiness (Business)",
                             "description": null,
                             "children": []
                         },
                         {
-                            "machine_name": "aos__cob__administration",
+                            "machine_name": "majors__cob__administration",
                             "human_name": "Area of Study: Administration",
                             "description": null,
                             "children": []
                         },
                         {
-                            "machine_name": "aos__cob__analytics",
+                            "machine_name": "majors__cob__analytics",
                             "human_name": "Area of Study: Business Analytics",
                             "description": null,
                             "children": []
                         },
                         {
-                            "machine_name": "aos__cob__economics",
+                            "machine_name": "majors__cob__economics",
                             "human_name": "Area of Study: Economics (Business)",
                             "description": null,
                             "children": []
                         },
                         {
-                            "machine_name": "aos__cob__finance",
+                            "machine_name": "majors__cob__finance",
                             "human_name": "Area of Study: Finance",
                             "description": null,
                             "children": []
                         },
                         {
-                            "machine_name": "aos__cob__global_leadership",
+                            "machine_name": "majors__cob__global_leadership",
                             "human_name": "Area of Study: Global Leadership",
                             "description": null,
                             "children": []
                         },
                         {
-                            "machine_name": "aos__cob__international_business",
+                            "machine_name": "majors__cob__international_business",
                             "human_name": "Area of Study: International Business",
                             "description": null,
                             "children": []
                         },
                         {
-                            "machine_name": "aos__cob__management",
+                            "machine_name": "majors__cob__management",
                             "human_name": "Area of Study: Management",
                             "description": null,
                             "children": []
                         },
                         {
-                            "machine_name": "aos__cob__marketing",
+                            "machine_name": "majors__cob__marketing",
                             "human_name": "Area of Study: Marketing",
                             "description": null,
                             "children": []
                         },
                         {
-                            "machine_name": "aos__cob__supply_chain_management",
+                            "machine_name": "majors__cob__supply_chain_management",
                             "human_name": "Area of Study: Supply Chain Management",
                             "description": null,
                             "children": []
@@ -332,151 +488,434 @@
             ]
         },
         {
-            "machine_name": "aos",
-            "human_name": "Areas of Study",
+            "machine_name": "aoi",
+            "human_name": "Areas of Interest",
             "description": null,
             "children": [
                 {
-                    "machine_name": "aos__cob__accounting",
+                    "machine_name": "majors__cob__aoi_agriculture_food",
+                    "human_name": "Area of Interest: Agriculture & Food",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "majors__cob__aoi_animals_plants",
+                    "human_name": "Area of Interest: Animals & Plants",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "majors__cob__aoi_arts",
+                    "human_name": "Area of Interest: Arts",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "majors__cob__aoi_business",
+                    "human_name": "Area of Interest: Business",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "majors__cob__aoi_communicating_writing",
+                    "human_name": "Area of Interest: Communicating & Writing",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "majors__cob__aoi_computers_technology",
+                    "human_name": "Area of Interest: Computers & Technology",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "majors__cob__aoi_design_creativity",
+                    "human_name": "Area of Interest: Design & Creativity",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "majors__cob__aoi_environment_energy_sustainability",
+                    "human_name": "Area of Interest: Environment, Energy, & Sustainability",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "majors__cob__aoi_ethics_social_justice",
+                    "human_name": "Area of Interest: Ethics & Social Justice",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "majors__cob__aoi_family_community",
+                    "human_name": "Area of Interest: Family & Community",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "majors__cob__aoi_global_perspectives_cultures_languages",
+                    "human_name": "Area of Interest: Global Perspectives, Cultures, & Languages",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "majors__cob__aoi_health_wellness",
+                    "human_name": "Area of Interest: Health & Wellness",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "majors__cob__aoi_human_behavior",
+                    "human_name": "Area of Interest: Human Behavior",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "majors__cob__aoi_life_sciences",
+                    "human_name": "Area of Interest: Life Sciences",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "majors__cob__aoi_making_building",
+                    "human_name": "Area of Interest: Making & Building",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "majors__cob__aoi_math_analytics_data_science",
+                    "human_name": "Area of Interest: Math, Analytics, & Data Science",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "majors__cob__aoi_media",
+                    "human_name": "Area of Interest: Media",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "majors__cob__aoi_physical_science",
+                    "human_name": "Area of Interest: Physical Science",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "majors__cob__aoi_politics_current_events",
+                    "human_name": "Area of Interest: Politics & Current Events",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "majors__cob__aoi_teaching",
+                    "human_name": "Area of Interest: Teaching",
+                    "description": null,
+                    "children": []
+                }
+            ]
+        },
+        {
+            "machine_name": "majors",
+            "human_name": "Majors",
+            "description": null,
+            "children": [
+                {
+                    "machine_name": "majors__cob__accounting",
                     "human_name": "Area of Study: Accounting",
                     "description": null,
                     "children": []
                 },
                 {
-                    "machine_name": "aos__cob__actuarial_sciences",
+                    "machine_name": "majors__cob__actuarial_sciences",
                     "human_name": "Area of Study: Actuarial Science (Business)",
                     "description": null,
                     "children": []
                 },
                 {
-                    "machine_name": "aos__cob__agribusiness",
+                    "machine_name": "majors__cob__agribusiness",
                     "human_name": "Area of Study: Agribusiness (Business)",
                     "description": null,
                     "children": []
                 },
                 {
-                    "machine_name": "aos__cob__administration",
+                    "machine_name": "majors__cob__administration",
                     "human_name": "Area of Study: Administration",
                     "description": null,
                     "children": []
                 },
                 {
-                    "machine_name": "aos__cob__analytics",
+                    "machine_name": "majors__cob__analytics",
                     "human_name": "Area of Study: Business Analytics",
                     "description": null,
                     "children": []
                 },
                 {
-                    "machine_name": "aos__cob__economics",
+                    "machine_name": "majors__cob__economics",
                     "human_name": "Area of Study: Economics (Business)",
                     "description": null,
                     "children": []
                 },
                 {
-                    "machine_name": "aos__cob__finance",
+                    "machine_name": "majors__cob__finance",
                     "human_name": "Area of Study: Finance",
                     "description": null,
                     "children": []
                 },
                 {
-                    "machine_name": "aos__cob__global_leadership",
+                    "machine_name": "majors__cob__global_leadership",
                     "human_name": "Area of Study: Global Leadership",
                     "description": null,
                     "children": []
                 },
                 {
-                    "machine_name": "aos__cob__international_business",
+                    "machine_name": "majors__cob__international_business",
                     "human_name": "Area of Study: International Business",
                     "description": null,
                     "children": []
                 },
                 {
-                    "machine_name": "aos__cob__management",
+                    "machine_name": "majors__cob__management",
                     "human_name": "Area of Study: Management",
                     "description": null,
                     "children": []
                 },
                 {
-                    "machine_name": "aos__cob__marketing",
+                    "machine_name": "majors__cob__marketing",
                     "human_name": "Area of Study: Marketing",
                     "description": null,
                     "children": []
                 },
                 {
-                    "machine_name": "aos__cob__supply_chain_management",
+                    "machine_name": "majors__cob__supply_chain_management",
                     "human_name": "Area of Study: Supply Chain Management",
                     "description": null,
                     "children": []
                 },
                 {
-                    "machine_name": "aos__casnr__accounting",
-                    "human_name": "Area of Study: Accounting",
+                    "machine_name": "majors__casnr__agribusiness",
+                    "human_name": "Area of Study: Agribusiness (CASNR)",
                     "description": null,
                     "children": []
                 },
                 {
-                    "machine_name": "aos__casnr__actuarial_sciences",
-                    "human_name": "Area of Study: Actuarial Science (Business)",
+                    "machine_name": "majors__casnr__ag_environmental_sciences_communication",
+                    "human_name": "Area of Study: Agricultural & Environmental Sciences Communication",
                     "description": null,
                     "children": []
                 },
                 {
-                    "machine_name": "aos__casnr__agribusiness",
-                    "human_name": "Area of Study: Agribusiness (Business)",
+                    "machine_name": "majors__casnr__ag_economics",
+                    "human_name": "Area of Study: Agricultural Economics",
                     "description": null,
                     "children": []
                 },
                 {
-                    "machine_name": "aos__casnr__administration",
-                    "human_name": "Area of Study: Administration",
+                    "machine_name": "majors__casnr__ag_eduction",
+                    "human_name": "Area of Study: Agricultural Education",
                     "description": null,
                     "children": []
                 },
                 {
-                    "machine_name": "aos__casnr__analytics",
-                    "human_name": "Area of Study: Business Analytics",
+                    "machine_name": "majors__casnr__agronomy",
+                    "human_name": "Area of Study: Agronomy",
                     "description": null,
                     "children": []
                 },
                 {
-                    "machine_name": "aos__casnr__economics",
-                    "human_name": "Area of Study: Economics (Business)",
+                    "machine_name": "majors__casnr__animal_science",
+                    "human_name": "Area of Study: Animal Science",
                     "description": null,
                     "children": []
                 },
                 {
-                    "machine_name": "aos__casnr__finance",
-                    "human_name": "Area of Study: Finance",
+                    "machine_name": "majors__casnr__applied_climate_science",
+                    "human_name": "Area of Study: Applied Climate Science",
                     "description": null,
                     "children": []
                 },
                 {
-                    "machine_name": "aos__casnr__global_leadership",
-                    "human_name": "Area of Study: Global Leadership",
+                    "machine_name": "majors__casnr__applied_science",
+                    "human_name": "Area of Study: Applied Science",
                     "description": null,
                     "children": []
                 },
                 {
-                    "machine_name": "aos__casnr__international_business",
-                    "human_name": "Area of Study: International Business",
+                    "machine_name": "majors__casnr__biochemistry",
+                    "human_name": "Area of Study: Biochemistry (CASNR)",
                     "description": null,
                     "children": []
                 },
                 {
-                    "machine_name": "aos__casnr__management",
-                    "human_name": "Area of Study: Management",
+                    "machine_name": "majors__casnr__comp_bio_informatics",
+                    "human_name": "Area of Study: Computational Biology & Bioinformatics Minor (CASNR)",
                     "description": null,
                     "children": []
                 },
                 {
-                    "machine_name": "aos__casnr__marketing",
-                    "human_name": "Area of Study: Marketing",
+                    "machine_name": "majors__casnr__energy_science",
+                    "human_name": "Area of Study: Energy Science",
                     "description": null,
                     "children": []
                 },
                 {
-                    "machine_name": "aos__casnr__supply_chain_management",
-                    "human_name": "Area of Study: Supply Chain Management",
+                    "machine_name": "majors__casnr__engler_agribusiness_entrepreneurship",
+                    "human_name": "Area of Study: Engler Agribusiness Entrepreneurship",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "majors__casnr__environmental_restoration_science",
+                    "human_name": "Area of Study: Environmental Restoration Science",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "majors__casnr__environmental_studies",
+                    "human_name": "Area of Study: Environmental Studies (CASNR)",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "majors__casnr__fisheries_wildlife",
+                    "human_name": "Area of Study: Fisheries & Wildlife",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "majors__casnr__food_science_tech",
+                    "human_name": "Area of Study: Food Science & Technology",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "majors__casnr__food_tech_for_companion_animals",
+                    "human_name": "Area of Study: Food Technology for Companion Animals",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "majors__casnr__food_energy_water_in_society",
+                    "human_name": "Area of Study: Food, Energy, and Water in Society",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "majors__casnr__forensic_science",
+                    "human_name": "Area of Study: Forensic Science",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "majors__casnr__general",
+                    "human_name": "Area of Study: General (CASNR)",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "majors__casnr__grassland_ecology_management",
+                    "human_name": "Area of Study: Grassland Ecology & Management",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "majors__casnr__grazing_livestock_systems",
+                    "human_name": "Area of Study: Grazing Livestock Systems",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "majors__casnr__horticulture",
+                    "human_name": "Area of Study: Horticulture",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "majors__casnr__hospitality_restaurant_tourism_management",
+                    "human_name": "Area of Study: Hospitality, Restaurant & Tourism Management (CASNR)",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "majors__casnr__insect_science",
+                    "human_name": "Area of Study: Insect Science",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "majors__casnr__integrated_science",
+                    "human_name": "Area of Study: Integrated Science",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "majors__casnr__international_agriculture_natural_resources",
+                    "human_name": "Area of Study: International Agriculture & Natural Resources",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "majors__casnr__mechanized_systems_management",
+                    "human_name": "Area of Study: Mechanized Systems Management",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "majors__casnr__microbiology",
+                    "human_name": "Area of Study: Microbiology (CASNR)",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "majors__casnr__natural_resource_environmental_economics",
+                    "human_name": "Area of Study: Natural Resource & Environmental Economics",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "majors__casnr__pga_golf_management",
+                    "human_name": "Area of Study: PGA Golf Management",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "majors__casnr__plant_biology",
+                    "human_name": "Area of Study: Plant Biology (CASNR)",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "majors__casnr__pre_veterinary_medicine",
+                    "human_name": "Area of Study: Pre-Veterinary Medicine",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "majors__casnr__statistics",
+                    "human_name": "Area of Study: Statistics (CASNR)",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "majors__casnr__turfgrass_landscape_management",
+                    "human_name": "Area of Study: Turfgrass & Landscape Management",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "majors__casnr__veterinary_science",
+                    "human_name": "Area of Study: Veterinary Science",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "majors__casnr__veterinary_tech",
+                    "human_name": "Area of Study: Veterinary Technology",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "majors__casnr__water_science",
+                    "human_name": "Area of Study: Water Science",
                     "description": null,
                     "children": []
                 }
@@ -2397,12 +2836,6 @@
                                     "description": null,
                                     "children": [
                                         {
-                                            "machine_name": "org_units__50009226",
-                                            "human_name": "Org Unit: Institutional Research",
-                                            "description": null,
-                                            "children": []
-                                        },
-                                        {
                                             "machine_name": "org_units__50000904",
                                             "human_name": "Org Unit: Office of Information Technology Services",
                                             "description": null,
@@ -3711,6 +4144,12 @@
                                                     "children": []
                                                 }
                                             ]
+                                        },
+                                        {
+                                            "machine_name": "org_units__50009226",
+                                            "human_name": "Org Unit: Institutional Research",
+                                            "description": null,
+                                            "children": []
                                         },
                                         {
                                             "machine_name": "org_units__50001313",
@@ -5539,12 +5978,6 @@
                             "description": null,
                             "children": [
                                 {
-                                    "machine_name": "org_units__50009226",
-                                    "human_name": "Org Unit: Institutional Research",
-                                    "description": null,
-                                    "children": []
-                                },
-                                {
                                     "machine_name": "org_units__50000904",
                                     "human_name": "Org Unit: Office of Information Technology Services",
                                     "description": null,
@@ -6853,6 +7286,12 @@
                                             "children": []
                                         }
                                     ]
+                                },
+                                {
+                                    "machine_name": "org_units__50009226",
+                                    "human_name": "Org Unit: Institutional Research",
+                                    "description": null,
+                                    "children": []
                                 },
                                 {
                                     "machine_name": "org_units__50001313",
@@ -9350,12 +9789,6 @@
                     "description": null,
                     "children": [
                         {
-                            "machine_name": "org_units__50009226",
-                            "human_name": "Org Unit: Institutional Research",
-                            "description": null,
-                            "children": []
-                        },
-                        {
                             "machine_name": "org_units__50000904",
                             "human_name": "Org Unit: Office of Information Technology Services",
                             "description": null,
@@ -9375,12 +9808,6 @@
                             "children": []
                         }
                     ]
-                },
-                {
-                    "machine_name": "org_units__50009226",
-                    "human_name": "Org Unit: Institutional Research",
-                    "description": null,
-                    "children": []
                 },
                 {
                     "machine_name": "org_units__50000904",
@@ -12275,6 +12702,12 @@
                             ]
                         },
                         {
+                            "machine_name": "org_units__50009226",
+                            "human_name": "Org Unit: Institutional Research",
+                            "description": null,
+                            "children": []
+                        },
+                        {
                             "machine_name": "org_units__50001313",
                             "human_name": "Org Unit: Jeffrey S. Raikes School of Computer Science and Management",
                             "description": null,
@@ -15031,6 +15464,12 @@
                 {
                     "machine_name": "org_units__50001030",
                     "human_name": "Org Unit: School of Art, Art History & Design",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "org_units__50009226",
+                    "human_name": "Org Unit: Institutional Research",
                     "description": null,
                     "children": []
                 },
