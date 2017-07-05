@@ -106,16 +106,52 @@ foreach ($colleges as $machineName => $humanName) {
 }
 
 /**
+ * Areas of Interest is retrieved from the areas of interest listed on
+ * https://catalog.unl.edu/undergraduate/majors/
+ */
+$tags['aoi'] = new Tag('aoi', 'Areas of Interest');
+$tags['unl']->addChild($tags['aoi']);
+
+$areas_of_interest = [
+    'agriculture_food' => 'Agriculture & Food',
+    'animals_plants' => 'Animals & Plants',
+    'arts' => 'Arts',
+    'business' => 'Business',
+    'communicating_writing' => 'Communicating & Writing',
+    'computers_technology' => 'Computers & Technology',
+    'design_creativity' => 'Design & Creativity',
+    'environment_energy_sustainability' => 'Environment, Energy, & Sustainability',
+    'ethics_social_justice' => 'Ethics & Social Justice',
+    'family_community' => 'Family & Community',
+    'global_perspectives_cultures_languages' => 'Global Perspectives, Cultures, & Languages',
+    'health_wellness' => 'Health & Wellness',
+    'human_behavior' => 'Human Behavior',
+    'life_sciences' => 'Life Sciences',
+    'making_building' => 'Making & Building',
+    'math_analytics_data_science' => 'Math, Analytics, & Data Science',
+    'media' => 'Media',
+    'physical_science' => 'Physical Science',
+    'politics_current_events' => 'Politics & Current Events',
+    'teaching' => 'Teaching',
+];
+
+foreach ($areas_of_interest as $machineName=>$humanName) {
+    $machineName = 'aoi__'.$machineName;
+    $tags[$machineName] = new Tag($machineName, 'Area of Interest: '.$humanName);
+    $tags['aoi']->addChild($tags[$machineName]);
+}
+
+/**
  * TODO: Replace these manual AOS tags with an api out of course leaf
  */
 /**
  * Add tags for each business area of study
  * Retrieved from https://catalog.unl.edu/undergraduate/
  */
-$tags['aos'] = new Tag('aos', 'Areas of Study');
-$tags['unl']->addChild($tags['aos']);
+$tags['majors'] = new Tag('majors', 'Majors');
+$tags['unl']->addChild($tags['majors']);
 
-$business_areas = [
+$business_majors = [
     'accounting' => 'Accounting',
     'actuarial_sciences' => 'Actuarial Science (Business)',
     'agribusiness' => 'Agribusiness (Business)',
@@ -130,14 +166,14 @@ $business_areas = [
     'supply_chain_management' => 'Supply Chain Management'
 ];
 
-foreach ($business_areas as $machineName=>$humanName) {
-    $machineName = 'aos__cob__'.$machineName;
+foreach ($business_majors as $machineName=>$humanName) {
+    $machineName = 'majors__cob__'.$machineName;
     $tags[$machineName] = new Tag($machineName, 'Area of Study: '.$humanName);
     $tags['colleges__cob']->addChild($tags[$machineName]);
-    $tags['aos']->addChild($tags[$machineName]);
+    $tags['majors']->addChild($tags[$machineName]);
 }
 
-$casnr_areas = [
+$casnr_majros = [
     'agribusiness' => 'Agribusiness (CASNR)',
     'ag_environmental_sciences_communication' => 'Agricultural & Environmental Sciences Communication',
     'ag_economics' => 'Agricultural Economics',
@@ -170,7 +206,7 @@ $casnr_areas = [
     'natural_resource_environmental_economics' => 'Natural Resource & Environmental Economics',
     'pga_golf_management' => 'PGA Golf Management',
     'plant_biology' => 'Plant Biology (CASNR)',
-    'pre-veterinary_medicine' => 'Pre-Veterinary Medicine',
+    'pre_veterinary_medicine' => 'Pre-Veterinary Medicine',
     'statistics' => 'Statistics (CASNR)',
     'turfgrass_landscape_management' => 'Turfgrass & Landscape Management',
     'veterinary_science' => 'Veterinary Science',
@@ -178,11 +214,11 @@ $casnr_areas = [
     'water_science' => 'Water Science',
 ];
 
-foreach ($business_areas as $machineName=>$humanName) {
-    $machineName = 'aos__casnr__'.$machineName;
+foreach ($casnr_majros as $machineName=>$humanName) {
+    $machineName = 'majors__casnr__'.$machineName;
     $tags[$machineName] = new Tag($machineName, 'Area of Study: '.$humanName);
     $tags['colleges__casnr']->addChild($tags[$machineName]);
-    $tags['aos']->addChild($tags[$machineName]);
+    $tags['majors']->addChild($tags[$machineName]);
 }
 
 
