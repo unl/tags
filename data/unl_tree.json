@@ -12,7 +12,44 @@
                     "machine_name": "audiences__students",
                     "human_name": "Students",
                     "description": null,
-                    "children": []
+                    "children": [
+                        {
+                            "machine_name": "audiences__students__transfer",
+                            "human_name": "Transfer Students",
+                            "description": null,
+                            "children": []
+                        },
+                        {
+                            "machine_name": "audiences__students__prospective",
+                            "human_name": "Prospective Students",
+                            "description": null,
+                            "children": []
+                        },
+                        {
+                            "machine_name": "audiences__students__graduate",
+                            "human_name": "Graduate Students",
+                            "description": null,
+                            "children": []
+                        },
+                        {
+                            "machine_name": "audiences__students__undergraduate",
+                            "human_name": "Undergraduate Students",
+                            "description": null,
+                            "children": []
+                        },
+                        {
+                            "machine_name": "audiences__students__current",
+                            "human_name": "Current Students",
+                            "description": null,
+                            "children": []
+                        },
+                        {
+                            "machine_name": "audiences__students__international",
+                            "human_name": "International Students",
+                            "description": null,
+                            "children": []
+                        }
+                    ]
                 },
                 {
                     "machine_name": "audiences__faculty",
@@ -23,12 +60,6 @@
                 {
                     "machine_name": "audiences__staff",
                     "human_name": "Staff",
-                    "description": null,
-                    "children": []
-                },
-                {
-                    "machine_name": "audiences__perspective_student",
-                    "human_name": "Perspective Student",
                     "description": null,
                     "children": []
                 },
@@ -51,24 +82,6 @@
                     "children": []
                 },
                 {
-                    "machine_name": "audiences__undergraduate_students",
-                    "human_name": "Undergraduate Students",
-                    "description": null,
-                    "children": []
-                },
-                {
-                    "machine_name": "audiences__graduate_students",
-                    "human_name": "Graduate Students",
-                    "description": null,
-                    "children": []
-                },
-                {
-                    "machine_name": "audiences__transfer_students",
-                    "human_name": "Transfer Students",
-                    "description": null,
-                    "children": []
-                },
-                {
                     "machine_name": "audiences__alumni",
                     "human_name": "Alumni",
                     "description": null,
@@ -77,8 +90,8 @@
             ]
         },
         {
-            "machine_name": "sports",
-            "human_name": "Sports",
+            "machine_name": "athletics",
+            "human_name": "Athletics",
             "description": null,
             "children": []
         },
@@ -101,20 +114,44 @@
             "children": []
         },
         {
-            "machine_name": "club",
-            "human_name": "Club",
+            "machine_name": "rso",
+            "human_name": "Student Organizations",
             "description": null,
             "children": []
         },
         {
             "machine_name": "event",
-            "human_name": "Event",
+            "human_name": "Events",
             "description": null,
             "children": []
         },
         {
             "machine_name": "campus_life",
             "human_name": "Campus Life",
+            "description": null,
+            "children": []
+        },
+        {
+            "machine_name": "diversity",
+            "human_name": "Diversity",
+            "description": null,
+            "children": []
+        },
+        {
+            "machine_name": "centers",
+            "human_name": "Centers",
+            "description": null,
+            "children": []
+        },
+        {
+            "machine_name": "institutes",
+            "human_name": "Institutes",
+            "description": null,
+            "children": []
+        },
+        {
+            "machine_name": "extension",
+            "human_name": "Extension",
             "description": null,
             "children": []
         },
@@ -482,6 +519,12 @@
                 {
                     "machine_name": "colleges__exploratory",
                     "human_name": "College: Exploratory & Pre-Professional Advising Center",
+                    "description": null,
+                    "children": []
+                },
+                {
+                    "machine_name": "colleges__law",
+                    "human_name": "College: Law",
                     "description": null,
                     "children": []
                 }

@@ -24,13 +24,9 @@ $audiences = [
     'students' => 'Students',
     'faculty' => 'Faculty',
     'staff' => 'Staff',
-    'perspective_student' => 'Perspective Student',
     'parents' => 'Parents',
     'emeriti' => 'Emeriti',
     'visitors' => 'Visitors',
-    'undergraduate_students' => 'Undergraduate Students',
-    'graduate_students' => 'Graduate Students',
-    'transfer_students' => 'Transfer Students',
     'alumni' => 'Alumni'
 ];
 
@@ -38,6 +34,21 @@ foreach ($audiences as $machineName => $humanName) {
     $machineName = 'audiences__'.$machineName;
     $tags[$machineName] = new Tag($machineName, $humanName);
     $tags['audiences']->addChild($tags[$machineName]);
+}
+
+$student_audiences = [
+    'transfer' => 'Transfer Students',
+    'prospective' => 'Prospective Students',
+    'graduate' => 'Graduate Students',
+    'undergraduate' => 'Undergraduate Students',
+    'current' => 'Current Students',
+    'international' => 'International Students',
+];
+
+foreach ($student_audiences as $machineName => $humanName) {
+    $machineName = 'audiences__students__'.$machineName;
+    $tags[$machineName] = new Tag($machineName, $humanName);
+    $tags['audiences__students']->addChild($tags[$machineName]);
 }
 
 $tags['campuses'] = new Tag('campuses', 'Campuses');
@@ -65,13 +76,17 @@ foreach ($campuses as $machineName => $details) {
  * General tags that don't exactly fit anywhere else
  */
 $general = [
-    'sports' => 'Sports',
+    'athletics' => 'Athletics',
     'jobs' => 'Jobs',
     'research' => 'Research',
     'internships' => 'Internships',
-    'club' => 'Club',
-    'event' => 'Event',
-    'campus_life' => 'Campus Life'
+    'rso' => 'Student Organizations',
+    'event' => 'Events',
+    'campus_life' => 'Campus Life',
+    'diversity' => 'Diversity',
+    'centers' => 'Centers',
+    'institutes' => 'Institutes',
+    'extension' => 'Extension',
 ];
 
 foreach ($general as $machineName => $humanName) {
@@ -97,6 +112,7 @@ $colleges = [
     'journalism' => 'Journalism & Mass Communications',
     'public_affairs_community_service' => 'Public Affairs & Community Service',
     'exploratory' => 'Exploratory & Pre-Professional Advising Center',
+    'law' => 'Law',
 ];
 
 foreach ($colleges as $machineName => $humanName) {
