@@ -21,7 +21,7 @@ class Tag implements JsonSerializable
     
     public function setMachineName($machineName)
     {
-        $machineName = strtolower(trim(preg_replace('/([^A-Za-z0-9-_.]+)/', '_', $machineName)));
+        $machineName = self::sanitizeMachineName($machineName);
 
         if (!preg_match('/^[a-z0-9\_]+$/', $machineName)) {
             throw new \UnexpectedValueException('Invalid machine name '.$machineName.'.');
@@ -81,5 +81,10 @@ class Tag implements JsonSerializable
         $data['children'] = $this->children;
         
         return $data;
+    }
+    
+    public static function sanitizeMachineName($name)
+    {
+        return strtolower(trim(preg_replace('/([^A-Za-z0-9_]+)/', '_', $name), ' _'));
     }
 }

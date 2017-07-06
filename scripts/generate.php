@@ -5,6 +5,7 @@
  * This script generates a list of tags and details associated with those tags
  */
 
+use Symfony\Component\DomCrawler\Crawler;
 use UNL\Tags\Tag;
 
 require __DIR__ . '/../vendor/autoload.php';
@@ -43,6 +44,10 @@ $student_audiences = [
     'undergraduate' => 'Undergraduate Students',
     'current' => 'Current Students',
     'international' => 'International Students',
+    'freshmen' => 'Freshmen',
+    'junior' => 'Junior',
+    'sophomore' => 'Sophomore',
+    'senior' => 'Senior',
 ];
 
 foreach ($student_audiences as $machineName => $humanName) {
@@ -51,6 +56,26 @@ foreach ($student_audiences as $machineName => $humanName) {
     $tags['audiences__students']->addChild($tags[$machineName]);
 }
 
+/**
+ * Funding opportunities
+ */
+$tags['funding'] = new Tag('funding', 'Funding');
+$tags['unl']->addChild($tags['funding']);
+
+$funding = [
+    'scholarships' => 'Scholarships',
+    'grants' => 'Grants',
+];
+
+foreach ($funding as $machineName => $humanName) {
+    $machineName = 'funding__'.$machineName;
+    $tags[$machineName] = new Tag($machineName, $humanName);
+    $tags['funding']->addChild($tags[$machineName]);
+}
+
+/**
+ * Campuses
+ */
 $tags['campuses'] = new Tag('campuses', 'Campuses');
 $campuses = [
     'city' => [
@@ -101,24 +126,21 @@ foreach ($general as $machineName => $humanName) {
 $tags['colleges'] = new Tag('colleges', 'Colleges');
 $tags['unl']->addChild($tags['colleges']);
 
-$colleges = [
-    'casnr' => 'Agricultural Sciences & Natural Resources',
-    'architecture' => 'Architecture',
-    'arts_sciences' => 'Arts & Sciences',
-    'cob' => 'College of Business',
-    'education_human_sciences' => 'Education & Human Sciences',
-    'engineering' => 'Engineering',
-    'fine_arts' => 'Fine & Performing Arts',
-    'journalism' => 'Journalism & Mass Communications',
-    'public_affairs_community_service' => 'Public Affairs & Community Service',
-    'exploratory' => 'Exploratory & Pre-Professional Advising Center',
-    'law' => 'Law',
-];
+$tags['majors'] = new Tag('majors', 'Majors');
+$tags['unl']->addChild($tags['majors']);
 
-foreach ($colleges as $machineName => $humanName) {
-    $machineName = 'colleges__'.$machineName;
-    $tags[$machineName] = new Tag($machineName, 'College: '.$humanName);
-    $tags['colleges']->addChild($tags[$machineName]);
+//Public affairs is actually out of Omaha, but classes are taught here
+$tags['pacs'] = new Tag('public_affairs_community_service', 'College: Public Affairs & Community Service');
+$tags['colleges']->addChild($tags['pacs']);
+
+$majors = getMajorsForCollege('.filter_43');
+
+foreach ($majors as $humanName) {
+    $majorMachineName = Tag::sanitizeMachineName($humanName);
+    $majorMachineName = 'majors__pacs__'.$majorMachineName;
+    $tags[$majorMachineName] = new Tag($majorMachineName, 'Major: '.$humanName);
+    $tags['pacs']->addChild($tags[$majorMachineName]);
+    $tags['majors']->addChild($tags[$majorMachineName]);
 }
 
 /**
@@ -158,86 +180,8 @@ foreach ($areas_of_interest as $machineName=>$humanName) {
 }
 
 /**
- * TODO: Replace these manual AOS tags with an api out of course leaf
+ * Add buildings
  */
-/**
- * Add tags for each business area of study
- * Retrieved from https://catalog.unl.edu/undergraduate/
- */
-$tags['majors'] = new Tag('majors', 'Majors');
-$tags['unl']->addChild($tags['majors']);
-
-$business_majors = [
-    'accounting' => 'Accounting',
-    'actuarial_sciences' => 'Actuarial Science (Business)',
-    'agribusiness' => 'Agribusiness (Business)',
-    'administration' => 'Administration',
-    'analytics' => 'Business Analytics',
-    'economics' => 'Economics (Business)',
-    'finance' => 'Finance',
-    'global_leadership' => 'Global Leadership',
-    'international_business' => 'International Business',
-    'management' => 'Management',
-    'marketing' => 'Marketing',
-    'supply_chain_management' => 'Supply Chain Management'
-];
-
-foreach ($business_majors as $machineName=>$humanName) {
-    $machineName = 'majors__cob__'.$machineName;
-    $tags[$machineName] = new Tag($machineName, 'Area of Study: '.$humanName);
-    $tags['colleges__cob']->addChild($tags[$machineName]);
-    $tags['majors']->addChild($tags[$machineName]);
-}
-
-$casnr_majros = [
-    'agribusiness' => 'Agribusiness (CASNR)',
-    'ag_environmental_sciences_communication' => 'Agricultural & Environmental Sciences Communication',
-    'ag_economics' => 'Agricultural Economics',
-    'ag_eduction' => 'Agricultural Education',
-    'agronomy' => 'Agronomy',
-    'animal_science' => 'Animal Science',
-    'applied_climate_science' => 'Applied Climate Science',
-    'applied_science' => 'Applied Science',
-    'biochemistry' => 'Biochemistry (CASNR)',
-    'comp_bio_informatics' => 'Computational Biology & Bioinformatics Minor (CASNR)',
-    'energy_science' => 'Energy Science',
-    'engler_agribusiness_entrepreneurship' => 'Engler Agribusiness Entrepreneurship',
-    'environmental_restoration_science' => 'Environmental Restoration Science',
-    'environmental_studies' => 'Environmental Studies (CASNR)',
-    'fisheries_wildlife' => 'Fisheries & Wildlife',
-    'food_science_tech' => 'Food Science & Technology',
-    'food_tech_for_companion_animals' => 'Food Technology for Companion Animals',
-    'food_energy_water_in_society' => 'Food, Energy, and Water in Society',
-    'forensic_science' => 'Forensic Science',
-    'general' => 'General (CASNR)',
-    'grassland_ecology_management' => 'Grassland Ecology & Management',
-    'grazing_livestock_systems' => 'Grazing Livestock Systems',
-    'Horticulture' => 'Horticulture',
-    'hospitality_restaurant_tourism_management' => 'Hospitality, Restaurant & Tourism Management (CASNR)',
-    'insect_science' => 'Insect Science',
-    'integrated_science' => 'Integrated Science',
-    'international_agriculture_natural_resources' => 'International Agriculture & Natural Resources',
-    'mechanized_systems_management' => 'Mechanized Systems Management',
-    'microbiology' => 'Microbiology (CASNR)',
-    'natural_resource_environmental_economics' => 'Natural Resource & Environmental Economics',
-    'pga_golf_management' => 'PGA Golf Management',
-    'plant_biology' => 'Plant Biology (CASNR)',
-    'pre_veterinary_medicine' => 'Pre-Veterinary Medicine',
-    'statistics' => 'Statistics (CASNR)',
-    'turfgrass_landscape_management' => 'Turfgrass & Landscape Management',
-    'veterinary_science' => 'Veterinary Science',
-    'veterinary_tech' => 'Veterinary Technology',
-    'water_science' => 'Water Science',
-];
-
-foreach ($casnr_majros as $machineName=>$humanName) {
-    $machineName = 'majors__casnr__'.$machineName;
-    $tags[$machineName] = new Tag($machineName, 'Area of Study: '.$humanName);
-    $tags['colleges__casnr']->addChild($tags[$machineName]);
-    $tags['majors']->addChild($tags[$machineName]);
-}
-
-
 $buildings = json_decode(file_get_contents('http://maps.unl.edu/?view=allbuildings&format=json'), true);
 $tags['buildings'] = new Tag('buildings', 'Buildings');
 $tags['unl']->addChild($tags['buildings']);
@@ -248,20 +192,66 @@ foreach ($buildings as $machineName=>$humanName) {
 }
 
 //Now get all of the org units
-//TODO: what about org units that are also colleges or listed elsewhere in this? Mark them as an alias somehow?
 $org_units = json_decode(file_get_contents('https://directory.unl.edu/departments/1?format=json'), true);
 $tags['org_units'] = new Tag('org_units', 'Org Units');
 $tags['unl']->addChild($tags['org_units']);
 
 function addOrgUnit($details, &$tags, Tag $parent = null)
 {
+    if ($details['suppress']) {
+        //Don't add suppressed entries
+        return;
+    }
+    
+    $college_org_units = [
+        50000787 => '.filter_26', //College of Agricultural Sciences and Natural Resources
+        50000800 => '.filter_31', //IANR College of Education & Human Sciences
+        50000928 => '', //NE College of Technical Agriculture
+        50000896 => '.filter_27', //College of Architecture
+        50000906 => '.filter_28', //College of Arts & Sciences
+        50000897 => '.filter_29', //College of Business
+        50000910 => '.filter_31', //College of Education & Human Sciences
+        50000907 => '.filter_32', //College of Engineering
+        50000908 => '.filter_38', //College of Journalism & Mass Communications
+        50000899 => '', //College of Law
+        50000898 => '.filter_34', //Hixson-Lied College of Fine & Performing Arts
+    ];
+    
     $machineName = 'org_units__'.$details['org_unit'];
-    $tags[$machineName] = new Tag($machineName, 'Org Unit: '.$details['name']);
+    
+    if (array_key_exists($details['org_unit'], $college_org_units)) {
+        //This is a college
+        $tags[$machineName] = new Tag($machineName, 'College: '.$details['name']);
+        $tags['colleges']->addChild($tags[$machineName]);
+        
+        $majors = [];
+        if ($details['org_unit'] == 50000928) {
+            
+        } else if ($details['org_unit'] == 50000899) {
+            
+        } else {
+            $majors = getMajorsForCollege($college_org_units[$details['org_unit']]);
+        }
+
+        foreach ($majors as $humanName) {
+            $majorMachineName = Tag::sanitizeMachineName($humanName);
+            $majorMachineName = 'majors__'.$details['org_unit'].'__'.$majorMachineName;
+            $tags[$majorMachineName] = new Tag($majorMachineName, 'Major: '.$humanName);
+            $tags[$machineName]->addChild($tags[$majorMachineName]);
+            $tags['majors']->addChild($tags[$majorMachineName]);
+        }
+        
+    } else {
+        //Just a regular org unit
+        $tags[$machineName] = new Tag($machineName, 'Org Unit: '.$details['name']);
+    }
+    
     $tags['org_units']->addChild($tags[$machineName]);
     
     if ($parent) {
         $parent->addChild($tags[$machineName]);
     }
+    
     
     if (isset($details['children'])) {
         //Add all children
@@ -269,6 +259,23 @@ function addOrgUnit($details, &$tags, Tag $parent = null)
             addOrgUnit($child, $tags, $tags[$machineName]);
         }
     }
+}
+
+function getMajorsForCollege($selector) {
+    $url = 'https://catalog.unl.edu/undergraduate/majors/';
+    $html = file_get_contents($url);
+
+    $crawler = new Crawler($html, $url);
+
+    $nodes = $crawler->filter($selector.' .item-name');
+
+    $majors = [];
+    
+    foreach ($nodes as $node) {
+        $majors[] = $node->nodeValue;
+    }
+    
+    return $majors;
 }
 
 //Now add them

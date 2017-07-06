@@ -11,5 +11,8 @@
     "autoload": {
         "psr-4": {"UNL\\Tags\\": "src/UNL/Tags"}
     },
-    "require": {}
+    "require": {
+        "symfony/dom-crawler": "^3.3",
+        "symfony/css-selector": "^3.3"
+    }
 }
