@@ -18,8 +18,8 @@ $tags['unl'] = new Tag('unl', 'University of Nebraska–Lincoln');
 /**
  * Audiences, can tag content that pertains to these audiences
  */
-$tags['audiences'] = new Tag('audiences', 'Audiences');
-$tags['unl']->addChild($tags['audiences']);
+$tags['unl__audiences'] = new Tag('unl__audiences', 'UNL Audiences');
+$tags['unl']->addChild($tags['unl__audiences']);
 
 $audiences = [
     'students' => 'Students',
@@ -32,9 +32,9 @@ $audiences = [
 ];
 
 foreach ($audiences as $machineName => $humanName) {
-    $machineName = 'audiences__'.$machineName;
-    $tags[$machineName] = new Tag($machineName, $humanName);
-    $tags['audiences']->addChild($tags[$machineName]);
+    $machineName = 'unl__audiences__'.$machineName;
+    $tags[$machineName] = new Tag($machineName, 'UNL audiences: '.$humanName);
+    $tags['unl__audiences']->addChild($tags[$machineName]);
 }
 
 $student_audiences = [
@@ -51,16 +51,16 @@ $student_audiences = [
 ];
 
 foreach ($student_audiences as $machineName => $humanName) {
-    $machineName = 'audiences__students__'.$machineName;
-    $tags[$machineName] = new Tag($machineName, $humanName);
-    $tags['audiences__students']->addChild($tags[$machineName]);
+    $machineName = 'unl__audiences__students__'.$machineName;
+    $tags[$machineName] = new Tag($machineName, 'UNL audiences: '.$humanName);
+    $tags['unl__audiences__students']->addChild($tags[$machineName]);
 }
 
 /**
  * Funding opportunities
  */
-$tags['funding'] = new Tag('funding', 'Funding');
-$tags['unl']->addChild($tags['funding']);
+$tags['unl__funding'] = new Tag('unl__funding', 'UNL Funding');
+$tags['unl']->addChild($tags['unl__funding']);
 
 $funding = [
     'scholarships' => 'Scholarships',
@@ -68,15 +68,15 @@ $funding = [
 ];
 
 foreach ($funding as $machineName => $humanName) {
-    $machineName = 'funding__'.$machineName;
-    $tags[$machineName] = new Tag($machineName, $humanName);
-    $tags['funding']->addChild($tags[$machineName]);
+    $machineName = 'unl__funding__'.$machineName;
+    $tags[$machineName] = new Tag($machineName, 'UNL ' . $humanName);
+    $tags['unl__funding']->addChild($tags[$machineName]);
 }
 
 /**
  * Campuses
  */
-$tags['campuses'] = new Tag('campuses', 'Campuses');
+$tags['unl__campuses'] = new Tag('unl__campuses', 'UNL Campuses');
 $campuses = [
     'city' => [
         'humanName' => 'City',
@@ -90,9 +90,9 @@ $campuses = [
 ];
 
 foreach ($campuses as $machineName => $details) {
-    $machineName = 'campuses__'.$machineName;
-    $tags[$machineName] = new Tag($machineName, 'Campus: '.$details['humanName']);
-    $tags['campuses']->addChild($tags[$machineName]);
+    $machineName = 'unl__campuses__'.$machineName;
+    $tags[$machineName] = new Tag($machineName, 'UNL Campus: '.$details['humanName']);
+    $tags['unl__campuses']->addChild($tags[$machineName]);
 }
 
 /**
@@ -115,7 +115,7 @@ $general = [
 ];
 
 foreach ($general as $machineName => $humanName) {
-    $tags[$machineName] = new Tag($machineName, $humanName);
+    $tags[$machineName] = new Tag('unl__'.$machineName, 'UNL ' . $humanName);
     $tags['unl']->addChild($tags[$machineName]);
 }
 
@@ -123,32 +123,32 @@ foreach ($general as $machineName => $humanName) {
  * Add tags for each college
  * Retrieved from https://catalog.unl.edu/undergraduate/
  */
-$tags['colleges'] = new Tag('colleges', 'Colleges');
-$tags['unl']->addChild($tags['colleges']);
+$tags['unl__colleges'] = new Tag('unl__colleges', 'UNL Colleges');
+$tags['unl']->addChild($tags['unl__colleges']);
 
-$tags['majors'] = new Tag('majors', 'Majors');
-$tags['unl']->addChild($tags['majors']);
+$tags['unl__majors'] = new Tag('unl__majors', 'Majors');
+$tags['unl']->addChild($tags['unl__majors']);
 
 //Public affairs is actually out of Omaha, but classes are taught here
-$tags['pacs'] = new Tag('public_affairs_community_service', 'College: Public Affairs & Community Service');
-$tags['colleges']->addChild($tags['pacs']);
+$tags['unl__colleges__pacs'] = new Tag('unl__colleges__pacs', 'College: Public Affairs & Community Service');
+$tags['unl__colleges']->addChild($tags['unl__colleges__pacs']);
 
 $majors = getMajorsForCollege('.filter_43');
 
 foreach ($majors as $humanName) {
     $majorMachineName = Tag::sanitizeMachineName($humanName);
-    $majorMachineName = 'majors__pacs__'.$majorMachineName;
-    $tags[$majorMachineName] = new Tag($majorMachineName, 'Major: '.$humanName);
-    $tags['pacs']->addChild($tags[$majorMachineName]);
-    $tags['majors']->addChild($tags[$majorMachineName]);
+    $majorMachineName = 'unl__majors__pacs__'.$majorMachineName;
+    $tags[$majorMachineName] = new Tag($majorMachineName, 'UNL Major: '.$humanName);
+    $tags['unl__colleges__pacs']->addChild($tags[$majorMachineName]);
+    $tags['unl__majors']->addChild($tags[$majorMachineName]);
 }
 
 /**
  * Areas of Interest is retrieved from the areas of interest listed on
  * https://catalog.unl.edu/undergraduate/majors/
  */
-$tags['aoi'] = new Tag('aoi', 'Areas of Interest');
-$tags['unl']->addChild($tags['aoi']);
+$tags['unl__aoi'] = new Tag('unl__aoi', 'UNL Areas of Interest');
+$tags['unl']->addChild($tags['unl__aoi']);
 
 $areas_of_interest = [
     'agriculture_food' => 'Agriculture & Food',
@@ -174,27 +174,27 @@ $areas_of_interest = [
 ];
 
 foreach ($areas_of_interest as $machineName=>$humanName) {
-    $machineName = 'aoi__'.$machineName;
-    $tags[$machineName] = new Tag($machineName, 'Area of Interest: '.$humanName);
-    $tags['aoi']->addChild($tags[$machineName]);
+    $machineName = 'unl__aoi__'.$machineName;
+    $tags[$machineName] = new Tag($machineName, 'UNL Area of Interest: '.$humanName);
+    $tags['unl__aoi']->addChild($tags[$machineName]);
 }
 
 /**
  * Add buildings
  */
 $buildings = json_decode(file_get_contents('http://maps.unl.edu/?view=allbuildings&format=json'), true);
-$tags['buildings'] = new Tag('buildings', 'Buildings');
-$tags['unl']->addChild($tags['buildings']);
+$tags['unl__buildings'] = new Tag('unl__buildings', 'UNL Buildings');
+$tags['unl']->addChild($tags['unl__buildings']);
 foreach ($buildings as $machineName=>$humanName) {
-    $machineName = 'buildings__'.$machineName;
-    $tags[$machineName] = new Tag($machineName, 'Building: '.$humanName);
-    $tags['buildings']->addChild($tags[$machineName]);
+    $machineName = 'unl__buildings__'.$machineName;
+    $tags[$machineName] = new Tag($machineName, 'UNL Building: '.$humanName);
+    $tags['unl__buildings']->addChild($tags[$machineName]);
 }
 
 //Now get all of the org units
 $org_units = json_decode(file_get_contents('https://directory.unl.edu/departments/1?format=json'), true);
-$tags['org_units'] = new Tag('org_units', 'Org Units');
-$tags['unl']->addChild($tags['org_units']);
+$tags['unl__org_units'] = new Tag('unl__org_units', 'UNL Org Units');
+$tags['unl']->addChild($tags['unl__org_units']);
 
 function addOrgUnit($details, &$tags, Tag $parent = null)
 {
@@ -217,12 +217,12 @@ function addOrgUnit($details, &$tags, Tag $parent = null)
         50000898 => '.filter_34', //Hixson-Lied College of Fine & Performing Arts
     ];
     
-    $machineName = 'org_units__'.$details['org_unit'];
+    $machineName = 'unl__org_units__'.$details['org_unit'];
     
     if (array_key_exists($details['org_unit'], $college_org_units)) {
         //This is a college
-        $tags[$machineName] = new Tag($machineName, 'College: '.$details['name']);
-        $tags['colleges']->addChild($tags[$machineName]);
+        $tags[$machineName] = new Tag($machineName, 'UNL College: '.$details['name']);
+        $tags['unl__colleges']->addChild($tags[$machineName]);
         
         $majors = [];
         if ($details['org_unit'] == 50000928) {
@@ -235,23 +235,22 @@ function addOrgUnit($details, &$tags, Tag $parent = null)
 
         foreach ($majors as $humanName) {
             $majorMachineName = Tag::sanitizeMachineName($humanName);
-            $majorMachineName = 'majors__'.$details['org_unit'].'__'.$majorMachineName;
-            $tags[$majorMachineName] = new Tag($majorMachineName, 'Major: '.$humanName);
+            $majorMachineName = 'unl__majors__'.$details['org_unit'].'__'.$majorMachineName;
+            $tags[$majorMachineName] = new Tag($majorMachineName, 'UNL Major: '.$humanName);
             $tags[$machineName]->addChild($tags[$majorMachineName]);
-            $tags['majors']->addChild($tags[$majorMachineName]);
+            $tags['unl__majors']->addChild($tags[$majorMachineName]);
         }
         
     } else {
         //Just a regular org unit
-        $tags[$machineName] = new Tag($machineName, 'Org Unit: '.$details['name']);
+        $tags[$machineName] = new Tag($machineName, 'UNL Org Unit: '.$details['name']);
     }
     
-    $tags['org_units']->addChild($tags[$machineName]);
+    $tags['unl__org_units']->addChild($tags[$machineName]);
     
     if ($parent) {
         $parent->addChild($tags[$machineName]);
     }
-    
     
     if (isset($details['children'])) {
         //Add all children
